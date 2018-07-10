@@ -8,7 +8,7 @@
 import XCTest
 @testable import SwiftyExtension
 
-class SwiftyExtension_Tests: XCTestCase {
+class SwiftyExtensionTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -31,5 +31,4 @@ class SwiftyExtension_Tests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
 }

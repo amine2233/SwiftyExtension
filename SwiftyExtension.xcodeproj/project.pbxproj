@@ -218,8 +218,8 @@
 		6757B8A520F23912007AF6D1 /* NSImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6757B8A420F23912007AF6D1 /* NSImageExtensions.swift */; };
 		6757B8AE20F23D12007AF6D1 /* UIAppearanceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6757B8AD20F23D12007AF6D1 /* UIAppearanceExtension.swift */; };
 		6757B8AF20F23D12007AF6D1 /* UIAppearanceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6757B8AD20F23D12007AF6D1 /* UIAppearanceExtension.swift */; };
-		6757B8B020F23D12007AF6D1 /* UIAppearanceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6757B8AD20F23D12007AF6D1 /* UIAppearanceExtension.swift */; };
 		6757B8B220F23D6B007AF6D1 /* NSAppearanceCustomization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6757B8B120F23D6B007AF6D1 /* NSAppearanceCustomization.swift */; };
+		67A77C9720F48B5C0049C318 /* UIAppearanceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6757B8AD20F23D12007AF6D1 /* UIAppearanceExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -619,6 +619,7 @@
 				6757B6E820F20F77007AF6D1 /* Frameworks */,
 				6757B6E920F20F77007AF6D1 /* Headers */,
 				6757B6EA20F20F77007AF6D1 /* Resources */,
+				67A77C9020F4899A0049C318 /* ⚙️ SwiftFormat */,
 				6757B8A620F23A1A007AF6D1 /* 🛠 Swiftlint */,
 			);
 			buildRules = (
@@ -637,6 +638,7 @@
 				6757B6F120F20F77007AF6D1 /* Sources */,
 				6757B6F220F20F77007AF6D1 /* Frameworks */,
 				6757B6F320F20F77007AF6D1 /* Resources */,
+				67A77C9120F489C50049C318 /* ⚙️ SwiftFormat */,
 				6757B8A720F23A2E007AF6D1 /* 🛠 Swiftlint */,
 			);
 			buildRules = (
@@ -657,6 +659,7 @@
 				6757B70520F20F9A007AF6D1 /* Frameworks */,
 				6757B70620F20F9A007AF6D1 /* Headers */,
 				6757B70720F20F9A007AF6D1 /* Resources */,
+				67A77C9220F48A120049C318 /* ⚙️ SwiftFormat */,
 				6757B8A820F23A37007AF6D1 /* 🛠 Swiftlint */,
 			);
 			buildRules = (
@@ -676,6 +679,7 @@
 				6757B71220F20FB8007AF6D1 /* Frameworks */,
 				6757B71320F20FB8007AF6D1 /* Headers */,
 				6757B71420F20FB8007AF6D1 /* Resources */,
+				67A77C9320F48A190049C318 /* ⚙️ SwiftFormat */,
 				6757B8A920F23A3F007AF6D1 /* 🛠 Swiftlint */,
 			);
 			buildRules = (
@@ -694,6 +698,7 @@
 				6757B71A20F20FB8007AF6D1 /* Sources */,
 				6757B71B20F20FB8007AF6D1 /* Frameworks */,
 				6757B71C20F20FB8007AF6D1 /* Resources */,
+				67A77C9420F48A200049C318 /* ⚙️ SwiftFormat */,
 				6757B8AA20F23A4A007AF6D1 /* 🛠 Swiftlint */,
 			);
 			buildRules = (
@@ -714,6 +719,7 @@
 				6757B72E20F20FF4007AF6D1 /* Frameworks */,
 				6757B72F20F20FF4007AF6D1 /* Headers */,
 				6757B73020F20FF4007AF6D1 /* Resources */,
+				67A77C9520F48A260049C318 /* ⚙️ SwiftFormat */,
 				6757B8AB20F23A52007AF6D1 /* 🛠 Swiftlint */,
 			);
 			buildRules = (
@@ -732,6 +738,7 @@
 				6757B73620F20FF5007AF6D1 /* Sources */,
 				6757B73720F20FF5007AF6D1 /* Frameworks */,
 				6757B73820F20FF5007AF6D1 /* Resources */,
+				67A77C9620F48A2E0049C318 /* ⚙️ SwiftFormat */,
 				6757B8AC20F23A5B007AF6D1 /* 🛠 Swiftlint */,
 			);
 			buildRules = (
@@ -950,6 +957,104 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
+		67A77C9020F4899A0049C318 /* ⚙️ SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "⚙️ SwiftFormat";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\nswiftformat \"$(SRCROOT)/$(PROJECT_DIR)/Sources\"\nelse\necho \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi";
+		};
+		67A77C9120F489C50049C318 /* ⚙️ SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "⚙️ SwiftFormat";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\nswiftformat \"$(SRCROOT)/$(PROJECT_DIR)/Tests\"\nelse\necho \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi";
+		};
+		67A77C9220F48A120049C318 /* ⚙️ SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "⚙️ SwiftFormat";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\nswiftformat \"$(SRCROOT)/$(PROJECT_DIR)//Sources\"\nelse\necho \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi";
+		};
+		67A77C9320F48A190049C318 /* ⚙️ SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "⚙️ SwiftFormat";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\nswiftformat \"$(SRCROOT)/$(PROJECT_DIR)//Sources\"\nelse\necho \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi";
+		};
+		67A77C9420F48A200049C318 /* ⚙️ SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "⚙️ SwiftFormat";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\nswiftformat \"$(SRCROOT)/$(PROJECT_DIR)/Tests\"\nelse\necho \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi";
+		};
+		67A77C9520F48A260049C318 /* ⚙️ SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "⚙️ SwiftFormat";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\nswiftformat \"$(SRCROOT)/$(PROJECT_DIR)//Sources\"\nelse\necho \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi";
+		};
+		67A77C9620F48A2E0049C318 /* ⚙️ SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "⚙️ SwiftFormat";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\nswiftformat \"$(SRCROOT)/$(PROJECT_DIR)/Tests\"\nelse\necho \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1124,6 +1229,7 @@
 				6757B7CE20F2290C007AF6D1 /* UIViewExtension.swift in Sources */,
 				6757B86420F22F46007AF6D1 /* CGFloatExtensions.swift in Sources */,
 				6757B86C20F22F46007AF6D1 /* CGPointExtensions.swift in Sources */,
+				67A77C9720F48B5C0049C318 /* UIAppearanceExtension.swift in Sources */,
 				6757B89E20F23623007AF6D1 /* URLExtensions.swift in Sources */,
 				6757B81D20F22CBA007AF6D1 /* UICollectionViewExtensions.swift in Sources */,
 				6757B7AC20F21A9F007AF6D1 /* SplitViewControllerManager.swift in Sources */,
@@ -1185,7 +1291,6 @@
 				6757B8A520F23912007AF6D1 /* NSImageExtensions.swift in Sources */,
 				6757B7BE20F2207C007AF6D1 /* NSViewExtensions.swift in Sources */,
 				6757B86920F22F46007AF6D1 /* CGSizeExtensions.swift in Sources */,
-				6757B8B020F23D12007AF6D1 /* UIAppearanceExtension.swift in Sources */,
 				6757B85D20F22F46007AF6D1 /* MKPolylineExtensions.swift in Sources */,
 				6757B85920F22F46007AF6D1 /* SKNodeExtensions.swift in Sources */,
 				6757B88F20F23623007AF6D1 /* DataExtensions.swift in Sources */,

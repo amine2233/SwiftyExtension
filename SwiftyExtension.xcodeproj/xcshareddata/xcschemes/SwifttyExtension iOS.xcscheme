@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6757B6EB20F20F77007AF6D1"
-               BuildableName = "SwiftyExtension.temp_caseinsensitive_rename.framework"
+               BuildableName = "SwiftyExtension.framework"
                BlueprintName = "SwiftyExtension iOS"
                ReferencedContainer = "container:SwiftyExtension.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6757B6F420F20F77007AF6D1"
-               BuildableName = "SwiftyExtension.temp_caseinsensitive_renameTests.xctest"
+               BuildableName = "SwiftyExtensionTests.xctest"
                BlueprintName = "SwiftyExtension iOSTests"
                ReferencedContainer = "container:SwiftyExtension.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6757B6EB20F20F77007AF6D1"
-            BuildableName = "SwiftyExtension.temp_caseinsensitive_rename.framework"
+            BuildableName = "SwiftyExtension.framework"
             BlueprintName = "SwiftyExtension iOS"
             ReferencedContainer = "container:SwiftyExtension.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6757B6EB20F20F77007AF6D1"
-            BuildableName = "SwiftyExtension.temp_caseinsensitive_rename.framework"
+            BuildableName = "SwiftyExtension.framework"
             BlueprintName = "SwiftyExtension iOS"
             ReferencedContainer = "container:SwiftyExtension.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6757B6EB20F20F77007AF6D1"
-            BuildableName = "SwiftyExtension.temp_caseinsensitive_rename.framework"
+            BuildableName = "SwiftyExtension.framework"
             BlueprintName = "SwiftyExtension iOS"
             ReferencedContainer = "container:SwiftyExtension.xcodeproj">
          </BuildableReference>
