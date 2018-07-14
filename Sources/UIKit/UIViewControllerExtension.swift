@@ -81,7 +81,7 @@ extension UIViewController {
     ///   - title: title of the alert
     ///   - message: message/body of the alert
     ///   - time: (Optional) TimeInterval to show toas message
-    func toast(title: String, message: String, time: TimeInterval = 1.0) {
+    public func toast(title: String, message: String, time: TimeInterval = 1.0) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         present(alert, animated: true, completion: {
             DispatchQueue.main.asyncAfter(deadline: .now() + time, execute: {
@@ -99,7 +99,7 @@ extension UIViewController {
     ///   - cancelCompletion: (Optional) completion block to be invoked when any one of the buttons is tapped. It passes the index of the tapped button as an argument
     /// - Returns: UIAlertController object (discardable).
     @discardableResult
-    func alert(title: String?, message: String?, actions: [UIAlertAction]? = nil, cancelCompletion: ((UIAlertAction) -> Void)? = nil) -> UIAlertController {
+    public func alert(title: String?, message: String?, actions: [UIAlertAction]? = nil, cancelCompletion: ((UIAlertAction) -> Void)? = nil) -> UIAlertController {
         let alertController: UIAlertController = UIAlertController(title: title, message: message, preferredStyle:
             .alert)
         let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .cancel, handler: { (alert) -> Void in
@@ -110,7 +110,7 @@ extension UIViewController {
         present(alertController, animated: true, completion: nil)
         return alertController
     }
-    
+
     /// Extension: Helper method to display an actionSheet on any UIViewController subclass. Uses UIAlertController to show an alert
     ///
     /// - Parameters:
@@ -120,7 +120,7 @@ extension UIViewController {
     ///   - cancelCompletion: (Optional) completion block to be invoked when cancel buttons is tapped.
     /// - Returns: UIAlertController object (discardable).
     @discardableResult
-    func alertSheet(title: String?, message: String?, actions: [UIAlertAction]? = nil, cancelCompletion: (() -> Void)? = nil) -> UIAlertController {
+    public func alertSheet(title: String?, message: String?, actions: [UIAlertAction]? = nil, cancelCompletion: (() -> Void)? = nil) -> UIAlertController {
         let alertController: UIAlertController = UIAlertController(title: title, message: message, preferredStyle:
             .actionSheet)
         let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in
