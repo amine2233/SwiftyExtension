@@ -78,7 +78,7 @@ public final class CompositeDisposable: Disposable {
 }
 
 extension NSObjectProtocol where Self: NSObject {
-    func observe<Value>(_ keyPath: KeyPath<Self, Value>, onChange: @escaping (Value) -> Void) -> Disposable {
+    public func observe<Value>(_ keyPath: KeyPath<Self, Value>, onChange: @escaping (Value) -> Void) -> Disposable {
         let observation = observe(keyPath, options: [.initial, .new]) { _, change in
             // The guard is because of https://bugs.swift.org/browse/SR-6066
             guard let newValue = change.newValue else { return }
@@ -96,7 +96,7 @@ extension NSObjectProtocol where Self: NSObject {
         return BlockDisposable { observer.invalidate() }
     }
 
-    func bind<Value, Target>(_ sourceKeyPath: KeyPath<Self, Value>, to target: Target, at targetKeyPath: ReferenceWritableKeyPath<Target, Value>) -> Disposable {
+    public func bind<Value, Target>(_ sourceKeyPath: KeyPath<Self, Value>, to target: Target, at targetKeyPath: ReferenceWritableKeyPath<Target, Value>) -> Disposable {
         return observe(sourceKeyPath) { target[keyPath: targetKeyPath] = $0 }
     }
 }
