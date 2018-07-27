@@ -3,7 +3,7 @@ import UIKit
 
 #if !os(watchOS)
 extension UIEdgeInsets {
-    enum Position {
+    public enum Position {
         case top
         case left
         case bottom
@@ -13,7 +13,7 @@ extension UIEdgeInsets {
 
 extension UIButton {
     @discardableResult
-    func border(width: CGFloat, color: UIColor? = nil) -> UIButton {
+    public func border(width: CGFloat, color: UIColor? = nil) -> UIButton {
         style({ button in
             button.layer.borderColor = (color ?? button.tintColor).cgColor
             button.layer.borderWidth = width
@@ -22,7 +22,7 @@ extension UIButton {
     }
 
     @discardableResult
-    func corner(radius: CGFloat) -> UIButton {
+    public func corner(radius: CGFloat) -> UIButton {
         style({ button in
             button.layer.cornerRadius = radius
         })
@@ -30,7 +30,7 @@ extension UIButton {
     }
 
     @discardableResult
-    func edgeInsets(_ positions: [UIEdgeInsets.Position], value: CGFloat) -> UIButton {
+    public func edgeInsets(_ positions: [UIEdgeInsets.Position], value: CGFloat) -> UIButton {
         var tmpPosition = positions
 
         if tmpPosition.isEmpty {
@@ -197,14 +197,14 @@ public extension UIButton {
     public func setTitleColorForAllStates(_ color: UIColor) {
         states.forEach { self.setTitleColor(color, for: $0) }
     }
-    
+
     /// SwifterSwift: Set title for all states.
     ///
     /// - Parameter title: title string.
     public func setTitleForAllStates(_ title: String) {
         states.forEach { self.setTitle(title, for: $0) }
     }
-    
+
     /// SwifterSwift: Center align title text and image on UIButton
     ///
     /// - Parameter spacing: spacing between UIButton title text and UIButton Image.
@@ -214,7 +214,7 @@ public extension UIButton {
         titleEdgeInsets = UIEdgeInsets(top: 0, left: insetAmount, bottom: 0, right: -insetAmount)
         contentEdgeInsets = UIEdgeInsets(top: 0, left: insetAmount, bottom: 0, right: insetAmount)
     }
-    
+
 }
 #endif
 
