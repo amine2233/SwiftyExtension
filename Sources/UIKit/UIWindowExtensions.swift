@@ -24,7 +24,7 @@ public extension UIWindow {
         to viewController: UIViewController,
         animated: Bool = true,
         duration: TimeInterval = 0.5,
-        options: UIViewAnimationOptions = .transitionFlipFromRight,
+        options: UIView.AnimationOptions = .transitionFlipFromRight,
         _ completion: (() -> Void)? = nil) {
 
         guard animated else {
