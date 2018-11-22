@@ -371,6 +371,7 @@ public extension UIView {
         }
     }
     
+    #if os(iOS)
     /// SwifterSwift: Shake view.
     ///
     /// - Parameters:
@@ -389,13 +390,13 @@ public extension UIView {
         }
         switch animationType {
         case .linear:
-            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
         case .easeIn:
-            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
         case .easeOut:
-            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
         case .easeInOut:
-            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         }
         CATransaction.setCompletionBlock(completion)
         animation.duration = duration
@@ -403,6 +404,7 @@ public extension UIView {
         layer.add(animation, forKey: "shake")
         CATransaction.commit()
     }
+    #endif
     
     /// SwifterSwift: Add Visual Format constraints.
     ///
@@ -417,7 +419,7 @@ public extension UIView {
             view.translatesAutoresizingMaskIntoConstraints = false
             viewsDictionary[key] = view
         }
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: withFormat, options: NSLayoutFormatOptions(), metrics: nil, views: viewsDictionary))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: withFormat, options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: viewsDictionary))
     }
     
     /// SwifterSwift: Anchor all sides of the view into it's superview.

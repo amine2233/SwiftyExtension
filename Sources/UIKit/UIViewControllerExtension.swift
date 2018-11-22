@@ -42,7 +42,7 @@ extension UIViewController {
         indicator.layer.cornerRadius = 10.0
         indicator.center = view.center
         indicator.backgroundColor = UIColor(white: 0.0, alpha: 0.75)
-        indicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.white
+        indicator.style = UIActivityIndicatorView.Style.white
         indicator.hidesWhenStopped = true
         indicator.startAnimating()
         return indicator
