@@ -11,7 +11,7 @@
 #if !os(watchOS)
 
 // MARK: - Methods
-public extension UIScrollView {
+extension UIScrollView {
     //Original Source: https://gist.github.com/thestoics/1204051
     /// SwifterSwift: Takes a snapshot of an entire ScrollView
     ///

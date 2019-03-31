@@ -24,7 +24,7 @@ import CoreImage
 
 #if !os(Linux)
 // MARK: - Properties
-public extension Color {
+extension Color {
 
 	/// SwifterSwift: Random color.
 	public static var random: Color {
@@ -171,7 +171,7 @@ public extension Color {
 }
 
 // MARK: - Methods
-public extension Color {
+extension Color {
 
 	/// SwifterSwift: Blend two Colors
 	///
@@ -258,7 +258,7 @@ public extension Color {
 }
 
 // MARK: - Initializers
-public extension Color {
+extension Color {
 
 	/// SwifterSwift: Create Color from RGB values with optional transparency.
 	///
@@ -358,7 +358,7 @@ public extension Color {
 
 // swiftlint:disable next type_body_length
 // MARK: - Social
-public extension Color {
+extension Color {
 
 	/// SwifterSwift: Brand identity color of popular social media platform.
 	public struct Social {
@@ -446,7 +446,7 @@ public extension Color {
 }
 
 // MARK: - Material colors
-public extension Color {
+extension Color {
 
 	/// SwifterSwift: Google Material design colors palette.
 	public struct Material {
@@ -1281,7 +1281,7 @@ public extension Color {
 }
 
 // MARK: - CSS colors
-public extension Color {
+extension Color {
 
 	/// SwifterSwift: CSS colors.
 	public struct CSS {
@@ -1735,7 +1735,7 @@ public extension Color {
 }
 
 // MARK: - Flat UI colors
-public extension Color {
+extension Color {
 
 	/// SwifterSwift: Flat UI colors
 	public struct FlatUI {

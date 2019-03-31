@@ -11,7 +11,7 @@ import UIKit
 
 #if !os(watchOS)
 // MARK: - Methods
-public extension UILabel {
+extension UILabel {
 
 	/// SwifterSwift: Initialize a UILabel with text
 	public convenience init(text: String?) {

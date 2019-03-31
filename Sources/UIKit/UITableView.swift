@@ -3,23 +3,23 @@ import UIKit
 
 #if !os(watchOS)
 // MARK: - Properties
-public extension UITableView {
-    
+extension UITableView {
+
     /// SwifterSwift: Index path of last row in tableView.
     public var indexPathForLastRow: IndexPath? {
         return indexPathForLastRow(inSection: lastSection)
     }
-    
+
     /// SwifterSwift: Index of last section in tableView.
     public var lastSection: Int {
         return numberOfSections > 0 ? numberOfSections - 1 : 0
     }
-    
+
 }
 
 // MARK: - Methods
-public extension UITableView {
-    
+extension UITableView {
+
     /// SwifterSwift: Number of all rows in all sections of tableView.
     ///
     /// - Returns: The count of all rows in the tableView.
@@ -32,7 +32,7 @@ public extension UITableView {
         }
         return rowCount
     }
-    
+
     /// SwifterSwift: IndexPath for last row in section.
     ///
     /// - Parameter section: section to get last row in.
@@ -44,7 +44,7 @@ public extension UITableView {
         }
         return IndexPath(row: numberOfRows(inSection: section) - 1, section: section)
     }
-    
+
     /// Reload data with a completion handler.
     ///
     /// - Parameter completion: completion handler to run after reloadData finishes.
@@ -55,17 +55,17 @@ public extension UITableView {
             completion()
         })
     }
-    
+
     /// SwifterSwift: Remove TableFooterView.
     public func removeTableFooterView() {
         tableFooterView = nil
     }
-    
+
     /// SwifterSwift: Remove TableHeaderView.
     public func removeTableHeaderView() {
         tableHeaderView = nil
     }
-    
+
     /// SwifterSwift: Scroll to bottom of TableView.
     ///
     /// - Parameter animated: set true to animate scroll (default is true).
@@ -73,14 +73,14 @@ public extension UITableView {
         let bottomOffset = CGPoint(x: 0, y: contentSize.height - bounds.size.height)
         setContentOffset(bottomOffset, animated: animated)
     }
-    
+
     /// SwifterSwift: Scroll to top of TableView.
     ///
     /// - Parameter animated: set true to animate scroll (default is true).
     public func scrollToTop(animated: Bool = true) {
         setContentOffset(CGPoint.zero, animated: animated)
     }
-    
+
     /// SwifterSwift: Check whether IndexPath is valid within the tableView
     ///
     /// - Parameter indexPath: An IndexPath to check
@@ -88,7 +88,7 @@ public extension UITableView {
     public func isValidIndexPath(_ indexPath: IndexPath) -> Bool {
         return indexPath.section < self.numberOfSections && indexPath.row < self.numberOfRows(inSection: indexPath.section)
     }
-    
+
     /// SwifterSwift: Safely scroll to possibly invalid IndexPath
     ///
     /// - Parameters:
@@ -100,7 +100,7 @@ public extension UITableView {
         guard indexPath.row < numberOfRows(inSection: indexPath.section) else { return }
         scrollToRow(at: indexPath, at: scrollPosition, animated: animated)
     }
-    
+
 }
 #endif
 

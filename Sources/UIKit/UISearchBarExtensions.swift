@@ -11,7 +11,7 @@ import UIKit
 
 #if os(iOS)
 // MARK: - Properties
-public extension UISearchBar {
+extension UISearchBar {
 
 	/// SwifterSwift: Text field inside search bar (if applicable).
 	public var textField: UITextField? {
@@ -30,7 +30,7 @@ public extension UISearchBar {
 }
 
 // MARK: - Methods
-public extension UISearchBar {
+extension UISearchBar {
 
 	/// SwifterSwift: Clear text.
 	public func clear() {

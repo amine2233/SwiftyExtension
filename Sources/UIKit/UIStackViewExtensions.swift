@@ -12,7 +12,7 @@ import UIKit
 #if !os(watchOS)
 // MARK: - Initializers
 @available(iOS 9.0, *)
-public extension UIStackView {
+extension UIStackView {
 
     /// SwifterSwift: Initialize an UIStackView with an array of UIView and common parameters.
     ///

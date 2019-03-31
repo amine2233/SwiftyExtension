@@ -18,7 +18,7 @@ import Cocoa
 #endif
 
 // MARK: - Properties
-public extension CGFloat {
+extension CGFloat {
 
 	/// SwifterSwift: Absolute of CGFloat value.
 	public var abs: CGFloat {
@@ -73,7 +73,7 @@ public extension CGFloat {
 }
 
 // MARK: - Methods
-public extension CGFloat {
+extension CGFloat {
 
 	/// SwifterSwift: Random CGFloat between two CGFloat values.
 	///

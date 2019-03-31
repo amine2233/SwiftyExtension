@@ -11,7 +11,7 @@ import UIKit
 
 #if !os(watchOS)
 // MARK: - Methods
-public extension UITextView {
+extension UITextView {
 
 	/// SwifterSwift: Clear text.
 	public func clear() {

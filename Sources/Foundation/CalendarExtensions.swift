@@ -10,7 +10,7 @@
 import Foundation
 
 // MARK: - Methods
-public extension Calendar {
+extension Calendar {
 
 	/// SwifterSwift: Return the number of days in the month for a specified 'Date'.
 	///

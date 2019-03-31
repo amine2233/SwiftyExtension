@@ -11,7 +11,7 @@ import UIKit
 
 #if !os(watchOS)
 // MARK: - Methods
-public extension UINavigationBar {
+extension UINavigationBar {
 
 	/// SwifterSwift: Set Navigation Bar title, title color and font.
 	///

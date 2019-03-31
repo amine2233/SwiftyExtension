@@ -100,6 +100,7 @@ extension Optional {
         return (first, second)
     }
 
+    // swiftlint:disable next large_tuple
     /// Zips the content of this optional with the content of another
     /// optional `other` only if both optionals are not empty
     func zip3<A, B>(with other: A?, another: B?) -> (Wrapped, A, B)? {

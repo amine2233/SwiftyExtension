@@ -11,7 +11,7 @@ import UIKit
 
 #if !os(watchOS)
 // MARK: - Methods
-public extension UINavigationController {
+extension UINavigationController {
 
 	/// SwifterSwift: Pop ViewController with completion handler.
 	///

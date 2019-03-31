@@ -9,7 +9,7 @@
 #if canImport(Foundation)
 import Foundation
 
-public extension FileManager {
+extension FileManager {
 
 	/// SwifterSwift: Read from a JSON file at a given path.
 	///

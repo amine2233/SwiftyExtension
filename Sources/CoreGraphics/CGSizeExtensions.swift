@@ -18,7 +18,7 @@ import Cocoa
 #endif
 
 // MARK: - Methods
-public extension CGSize {
+extension CGSize {
 
 	/// SwifterSwift: Aspect fit CGSize.
 	///

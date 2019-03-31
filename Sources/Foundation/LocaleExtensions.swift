@@ -10,7 +10,7 @@
 import Foundation
 
 // MARK: - Properties
-public extension Locale {
+extension Locale {
 
 	/// SwifterSwift: UNIX representation of locale usually used for normalizing.
 	public static var posix: Locale {

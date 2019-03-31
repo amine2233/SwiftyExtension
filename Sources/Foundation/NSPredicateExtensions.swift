@@ -10,7 +10,7 @@
 import Foundation
 
 // MARK: - Properties
-public extension NSPredicate {
+extension NSPredicate {
 
 	/// SwifterSwift: Returns a new predicate formed by NOT-ing the predicate.
 	public var not: NSCompoundPredicate {
@@ -20,7 +20,7 @@ public extension NSPredicate {
 }
 
 // MARK: - Methods
-public extension NSPredicate {
+extension NSPredicate {
 
 	/// SwifterSwift: Returns a new predicate formed by AND-ing the argument to the predicate.
 	///
@@ -41,7 +41,7 @@ public extension NSPredicate {
 }
 
 // MARK: - Operators
-public extension NSPredicate {
+extension NSPredicate {
 
 	/// SwifterSwift: Returns a new predicate formed by NOT-ing the predicate.
 	/// - Parameters: rhs: NSPredicate to convert.

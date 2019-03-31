@@ -11,7 +11,7 @@ import UIKit
 
 // MARK: - Properties
 #if os(iOS)
-public extension UIImage {
+extension UIImage {
 
 	/// SwifterSwift: Size in bytes of UIImage
 	public var bytesSize: Int {
@@ -36,7 +36,7 @@ public extension UIImage {
 }
 
 // MARK: - Methods
-public extension UIImage {
+extension UIImage {
 
 	/// SwifterSwift: Compressed UIImage from original UIImage.
 	///
@@ -169,7 +169,7 @@ public extension UIImage {
 }
 
 // MARK: - Initializers
-public extension UIImage {
+extension UIImage {
 
 	/// SwifterSwift: Create UIImage from color and size.
 	///

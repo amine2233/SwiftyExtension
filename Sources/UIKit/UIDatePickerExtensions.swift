@@ -11,7 +11,7 @@ import UIKit
 
 #if os(iOS)
 // MARK: - Properties
-public extension UIDatePicker {
+extension UIDatePicker {
 
 	/// SwifterSwift: Text color of UIDatePicker.
 	public var textColor: UIColor? {

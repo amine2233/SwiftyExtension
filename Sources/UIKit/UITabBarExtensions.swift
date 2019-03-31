@@ -11,7 +11,7 @@ import UIKit
 
 #if !os(watchOS)
 // MARK: - Methods
-public extension UITabBar {
+extension UITabBar {
 
 	/// SwifterSwift: Set tabBar colors.
 	///

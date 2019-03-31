@@ -12,7 +12,7 @@ import MapKit
 // MARK: - Initializers
 #if !os(watchOS)
 @available(tvOS 9.2, *)
-public extension MKPolyline {
+extension MKPolyline {
 
     /// SwifterSwift: Create a new MKPolyline from a provided Array of coordinates.
     ///
@@ -28,7 +28,7 @@ public extension MKPolyline {
 #if !os(watchOS)
 // MARK: - Properties
 @available(tvOS 9.2, *)
-public extension MKPolyline {
+extension MKPolyline {
 
     /// SwifterSwift: Return an Array of coordinates representing the provided polyline.
     public var coordinates: [CLLocationCoordinate2D] {

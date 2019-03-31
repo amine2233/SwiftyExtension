@@ -11,7 +11,7 @@ import UIKit
 
 #if !os(watchOS)
 // MARK: - Methods
-public extension UIGestureRecognizer {
+extension UIGestureRecognizer {
 
     /// SwifterSwift: Remove Gesture Recognizer from its view.
     public func removeFromView() {

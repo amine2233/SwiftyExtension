@@ -18,7 +18,7 @@ import Cocoa
 #endif
 
 // MARK: - Properties
-public extension NSAttributedString {
+extension NSAttributedString {
 
 	#if os(iOS)
 	/// SwifterSwift: Bolded string.
@@ -56,7 +56,7 @@ public extension NSAttributedString {
 }
 
 // MARK: - Methods
-public extension NSAttributedString {
+extension NSAttributedString {
 
 	/// SwifterSwift: Applies given attributes to the new instance of NSAttributedString initialized with self object
 	///
@@ -122,7 +122,7 @@ public extension NSAttributedString {
 }
 
 // MARK: - Operators
-public extension NSAttributedString {
+extension NSAttributedString {
 
 	/// SwifterSwift: Add a NSAttributedString to another NSAttributedString.
 	///

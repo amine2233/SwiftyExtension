@@ -3,7 +3,7 @@ import UIKit
 
 #if !os(watchOS)
 // MARK: - Properties
-public extension UIViewController {
+extension UIViewController {
     /// Extension: Check if ViewController is onscreen and not hidden.
     public var isVisible: Bool {
         // http://stackoverflow.com/questions/2777438/how-to-tell-if-uiviewcontrollers-view-is-visible
@@ -20,14 +20,14 @@ extension UIViewController {
     public func addNotificationObserver(name: Notification.Name, selector: Selector) {
         NotificationCenter.default.addObserver(self, selector: selector, name: name, object: nil)
     }
-    
+
     /// SwifterSwift: Unassign as listener to notification.
     ///
     /// - Parameter name: notification name.
     public func removeNotificationObserver(name: Notification.Name) {
         NotificationCenter.default.removeObserver(self, name: name, object: nil)
     }
-    
+
     /// SwifterSwift: Unassign as listener from all notifications.
     public func removeNotificationsObserver() {
         NotificationCenter.default.removeObserver(self)
@@ -47,7 +47,7 @@ extension UIViewController {
         indicator.startAnimating()
         return indicator
     }
-    
+
     /// Loading view controller
     struct LoadingSetting {
         static var loading: UIActivityIndicatorView?
@@ -89,7 +89,7 @@ extension UIViewController {
             })
         })
     }
-    
+
     /// Extension: Helper method to display an alert on any UIViewController subclass. Uses UIAlertController to show an alert
     ///
     /// - Parameters:

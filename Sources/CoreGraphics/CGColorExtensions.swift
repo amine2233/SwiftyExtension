@@ -18,7 +18,7 @@ import Cocoa
 #endif
 
 // MARK: - Properties
-public extension CGColor {
+extension CGColor {
 
 	#if canImport(UIKit)
 	/// SwifterSwift: UIColor.

@@ -54,7 +54,7 @@ extension UIButton {
 }
 
 // MARK: - Properties
-public extension UIButton {
+extension UIButton {
 
     /// SwifterSwift: Image of disabled state for button; also inspectable from Storyboard.
     @IBInspectable public var imageForDisabled: UIImage? {
@@ -178,7 +178,7 @@ public extension UIButton {
 }
 
 // MARK: - Methods
-public extension UIButton {
+extension UIButton {
 
     private var states: [UIControl.State] {
         return [.normal, .selected, .highlighted, .disabled]

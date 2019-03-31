@@ -11,7 +11,7 @@ public enum ISO8601Format: String {
     case dateTime = "yyyy-MM-dd'T'HH:mmZ" // 1997-07-16T19:20+01:00
     case dateTimeSec = "yyyy-MM-dd'T'HH:mm:ssZ" // 1997-07-16T19:20:30+01:00
     case dateTimeMilliSec = "yyyy-MM-dd'T'HH:mm:ss.SSSZ" // 1997-07-16T19:20:30.45+01:00
-    
+
     init(dateString: String) {
         switch dateString.count {
         case 4:
@@ -41,36 +41,36 @@ extension Date {
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         return dateFormatter
     }
-    
+
     static func apiShortDateFormatter() -> DateFormatter {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         return dateFormatter
     }
-    
+
     init(dateString: String) {
         self = Date.apiDateFormatter().date(from: dateString)!
     }
-    
+
     func toShhort() -> String {
         let formatter = Date.apiShortDateFormatter()
         return formatter.string(from: self)
     }
-    
+
     func toApi(withTime time: Bool = false) -> String {
         let formatter = time ? Date.apiDateFormatter() : Date.apiShortDateFormatter()
         return formatter.string(from: self)
     }
-    
+
     func add(with days: Int) -> Date? {
         return NSCalendar.current.date(byAdding: .day, value: days, to: self, wrappingComponents: false)
     }
-    
+
     func time() -> String {
         let calender = Calendar.current
         return String(format: "%d:%d", calender.component(.hour, from: self), calender.component(.minute, from: self))
     }
-    
+
     func dateWithoutTime() -> Date? {
         let calender = Calendar.current
         return calender.dateComponents([.year, .month, .day], from: self).date

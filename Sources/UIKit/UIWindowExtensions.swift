@@ -10,7 +10,7 @@
 import UIKit
 
 #if os(iOS)
-public extension UIWindow {
+extension UIWindow {
 
     /// SwifterSwift: Switch current root view controller with a new view controller.
     ///

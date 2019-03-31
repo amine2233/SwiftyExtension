@@ -11,7 +11,7 @@ import UIKit
 
 #if !os(watchOS)
 // MARK: - Properties
-public extension UISegmentedControl {
+extension UISegmentedControl {
 
 	/// SwifterSwift: Segments titles.
 	public var segmentTitles: [String] {

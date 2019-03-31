@@ -10,7 +10,7 @@
 import Foundation
 
 // MARK: - Initializers
-public extension URLRequest {
+extension URLRequest {
 
 	/// SwifterSwift: Create URLRequest from URL string.
 	///

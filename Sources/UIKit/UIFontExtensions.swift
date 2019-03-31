@@ -10,7 +10,7 @@
 import UIKit
 
 // MARK: - Properties
-public extension UIFont {
+extension UIFont {
 
     /// SwifterSwift: Font as bold font
     public var bold: UIFont {

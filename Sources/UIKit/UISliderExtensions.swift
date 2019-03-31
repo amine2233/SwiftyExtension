@@ -11,7 +11,7 @@ import UIKit
 
 #if os(iOS)
 // MARK: - Methods
-public extension UISlider {
+extension UISlider {
 
 	/// SwifterSwift: Set slide bar value with completion handler.
 	///

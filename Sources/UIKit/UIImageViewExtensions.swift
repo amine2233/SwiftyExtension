@@ -11,7 +11,7 @@ import UIKit
 
 #if !os(watchOS)
 // MARK: - Methods
-public extension UIImageView {
+extension UIImageView {
 
 	/// SwifterSwift: Set image from a URL.
 	///

@@ -18,7 +18,7 @@ import Cocoa
 #endif
 
 // MARK: - Methods
-public extension CGPoint {
+extension CGPoint {
 
 	/// SwifterSwift: Distance from another CGPoint.
 	///
@@ -52,7 +52,7 @@ public extension CGPoint {
 }
 
 // MARK: - Operators
-public extension CGPoint {
+extension CGPoint {
 
 	/// SwifterSwift: Add two CGPoints.
 	///

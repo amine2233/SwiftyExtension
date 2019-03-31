@@ -11,7 +11,7 @@ import UIKit
 
 #if !os(watchOS)
 // MARK: - Methods
-public extension UINavigationItem {
+extension UINavigationItem {
 
 	/// SwifterSwift: Replace title label with an image in navigation item.
 	///

@@ -15,7 +15,7 @@ import AVFoundation
 #endif
 
 // MARK: - Properties
-public extension URL {
+extension URL {
 
 	/// SwifterSwift: Dictionary of the URL's query parameters
 	public var queryParameters: [String: String]? {
@@ -33,7 +33,7 @@ public extension URL {
 }
 
 // MARK: - Methods
-public extension URL {
+extension URL {
 
 	/// SwifterSwift: URL with appending query parameters.
 	///
@@ -105,7 +105,7 @@ public extension URL {
 }
 
 // MARK: - Methods
-public extension URL {
+extension URL {
 
 	#if os(iOS) || os(tvOS)
 	/// Generate a thumbnail image from given url. Returns nil if no thumbnail could be created. This function may take some time to complete. It's recommended to dispatch the call if the thumbnail is not generated from a local resource.

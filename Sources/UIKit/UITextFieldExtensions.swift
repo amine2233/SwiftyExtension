@@ -11,7 +11,7 @@ import UIKit
 
 #if !os(watchOS)
 // MARK: - Enums
-public extension UITextField {
+extension UITextField {
 
 	/// SwifterSwift: UITextField text type.
 	///
@@ -32,7 +32,7 @@ public extension UITextField {
 }
 
 // MARK: - Properties
-public extension UITextField {
+extension UITextField {
 
 	/// SwifterSwift: Set textField for common text types.
 	public var textType: TextType {
@@ -120,7 +120,7 @@ public extension UITextField {
 }
 
 // MARK: - Methods
-public extension UITextField {
+extension UITextField {
 
 	/// SwifterSwift: Clear text.
 	public func clear() {

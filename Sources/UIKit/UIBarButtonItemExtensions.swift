@@ -11,7 +11,7 @@ import UIKit
 
 #if !os(watchOS)
 // MARK: - Methods
-public extension UIBarButtonItem {
+extension UIBarButtonItem {
 
 	/// SwifterSwift: Add Target to UIBarButtonItem
 	///

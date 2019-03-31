@@ -10,7 +10,7 @@
 import Foundation
 
 // MARK: - Properties
-public extension Data {
+extension Data {
 
 	/// SwifterSwift: Return data as an array of bytes.
 	public var bytes: [UInt8] {
@@ -21,7 +21,7 @@ public extension Data {
 }
 
 // MARK: - Methods
-public extension Data {
+extension Data {
 
 	/// SwifterSwift: String by encoding Data using the given encoding (if applicable).
 	///
